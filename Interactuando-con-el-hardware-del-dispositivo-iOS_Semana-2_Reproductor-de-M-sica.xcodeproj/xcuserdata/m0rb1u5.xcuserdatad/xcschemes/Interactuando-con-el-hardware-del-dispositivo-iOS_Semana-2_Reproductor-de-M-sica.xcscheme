@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0830"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "942CCCDB1EAA430800ABF378"
+               BuildableName = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica.app"
+               BlueprintName = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica"
+               ReferencedContainer = "container:Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "942CCCF11EAA430800ABF378"
+               BuildableName = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaTests.xctest"
+               BlueprintName = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaTests"
+               ReferencedContainer = "container:Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "942CCCFC1EAA430900ABF378"
+               BuildableName = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaUITests.xctest"
+               BlueprintName = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaUITests"
+               ReferencedContainer = "container:Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "942CCCDB1EAA430800ABF378"
+            BuildableName = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica.app"
+            BlueprintName = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica"
+            ReferencedContainer = "container:Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "942CCCDB1EAA430800ABF378"
+            BuildableName = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica.app"
+            BlueprintName = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica"
+            ReferencedContainer = "container:Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "942CCCDB1EAA430800ABF378"
+            BuildableName = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica.app"
+            BlueprintName = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica"
+            ReferencedContainer = "container:Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

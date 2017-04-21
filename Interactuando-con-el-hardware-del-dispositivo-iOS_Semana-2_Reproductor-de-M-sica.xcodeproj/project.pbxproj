@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		942CCCE01EAA430800ABF378 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942CCCDF1EAA430800ABF378 /* AppDelegate.swift */; };
+		942CCCE21EAA430800ABF378 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942CCCE11EAA430800ABF378 /* MasterViewController.swift */; };
+		942CCCE41EAA430800ABF378 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942CCCE31EAA430800ABF378 /* DetailViewController.swift */; };
+		942CCCE71EAA430800ABF378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942CCCE51EAA430800ABF378 /* Main.storyboard */; };
+		942CCCE91EAA430800ABF378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 942CCCE81EAA430800ABF378 /* Assets.xcassets */; };
+		942CCCEC1EAA430800ABF378 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942CCCEA1EAA430800ABF378 /* LaunchScreen.storyboard */; };
+		942CCCF71EAA430800ABF378 /* Interactuando_con_el_hardware_del_dispositivo_iOS_Semana_2_Reproductor_de_M_sicaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942CCCF61EAA430800ABF378 /* Interactuando_con_el_hardware_del_dispositivo_iOS_Semana_2_Reproductor_de_M_sicaTests.swift */; };
+		942CCD021EAA430900ABF378 /* Interactuando_con_el_hardware_del_dispositivo_iOS_Semana_2_Reproductor_de_M_sicaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942CCD011EAA430900ABF378 /* Interactuando_con_el_hardware_del_dispositivo_iOS_Semana_2_Reproductor_de_M_sicaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		942CCCF31EAA430800ABF378 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 942CCCD41EAA430800ABF378 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 942CCCDB1EAA430800ABF378;
+			remoteInfo = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica";
+		};
+		942CCCFE1EAA430900ABF378 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 942CCCD41EAA430800ABF378 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 942CCCDB1EAA430800ABF378;
+			remoteInfo = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		942CCCDC1EAA430800ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		942CCCDF1EAA430800ABF378 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		942CCCE11EAA430800ABF378 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		942CCCE31EAA430800ABF378 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		942CCCE61EAA430800ABF378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		942CCCE81EAA430800ABF378 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		942CCCEB1EAA430800ABF378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		942CCCED1EAA430800ABF378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		942CCCF21EAA430800ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		942CCCF61EAA430800ABF378 /* Interactuando_con_el_hardware_del_dispositivo_iOS_Semana_2_Reproductor_de_M_sicaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactuando_con_el_hardware_del_dispositivo_iOS_Semana_2_Reproductor_de_M_sicaTests.swift; sourceTree = "<group>"; };
+		942CCCF81EAA430900ABF378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		942CCCFD1EAA430900ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		942CCD011EAA430900ABF378 /* Interactuando_con_el_hardware_del_dispositivo_iOS_Semana_2_Reproductor_de_M_sicaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactuando_con_el_hardware_del_dispositivo_iOS_Semana_2_Reproductor_de_M_sicaUITests.swift; sourceTree = "<group>"; };
+		942CCD031EAA430900ABF378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		942CCCD91EAA430800ABF378 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		942CCCEF1EAA430800ABF378 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		942CCCFA1EAA430900ABF378 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		942CCCD31EAA430800ABF378 = {
+			isa = PBXGroup;
+			children = (
+				942CCCDE1EAA430800ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica */,
+				942CCCF51EAA430800ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaTests */,
+				942CCD001EAA430900ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaUITests */,
+				942CCCDD1EAA430800ABF378 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		942CCCDD1EAA430800ABF378 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				942CCCDC1EAA430800ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica.app */,
+				942CCCF21EAA430800ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaTests.xctest */,
+				942CCCFD1EAA430900ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		942CCCDE1EAA430800ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica */ = {
+			isa = PBXGroup;
+			children = (
+				942CCCDF1EAA430800ABF378 /* AppDelegate.swift */,
+				942CCCE11EAA430800ABF378 /* MasterViewController.swift */,
+				942CCCE31EAA430800ABF378 /* DetailViewController.swift */,
+				942CCCE51EAA430800ABF378 /* Main.storyboard */,
+				942CCCE81EAA430800ABF378 /* Assets.xcassets */,
+				942CCCEA1EAA430800ABF378 /* LaunchScreen.storyboard */,
+				942CCCED1EAA430800ABF378 /* Info.plist */,
+			);
+			path = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica";
+			sourceTree = "<group>";
+		};
+		942CCCF51EAA430800ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaTests */ = {
+			isa = PBXGroup;
+			children = (
+				942CCCF61EAA430800ABF378 /* Interactuando_con_el_hardware_del_dispositivo_iOS_Semana_2_Reproductor_de_M_sicaTests.swift */,
+				942CCCF81EAA430900ABF378 /* Info.plist */,
+			);
+			path = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaTests";
+			sourceTree = "<group>";
+		};
+		942CCD001EAA430900ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				942CCD011EAA430900ABF378 /* Interactuando_con_el_hardware_del_dispositivo_iOS_Semana_2_Reproductor_de_M_sicaUITests.swift */,
+				942CCD031EAA430900ABF378 /* Info.plist */,
+			);
+			path = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		942CCCDB1EAA430800ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 942CCD061EAA430900ABF378 /* Build configuration list for PBXNativeTarget "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica" */;
+			buildPhases = (
+				942CCCD81EAA430800ABF378 /* Sources */,
+				942CCCD91EAA430800ABF378 /* Frameworks */,
+				942CCCDA1EAA430800ABF378 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica";
+			productName = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica";
+			productReference = 942CCCDC1EAA430800ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica.app */;
+			productType = "com.apple.product-type.application";
+		};
+		942CCCF11EAA430800ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 942CCD091EAA430900ABF378 /* Build configuration list for PBXNativeTarget "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaTests" */;
+			buildPhases = (
+				942CCCEE1EAA430800ABF378 /* Sources */,
+				942CCCEF1EAA430800ABF378 /* Frameworks */,
+				942CCCF01EAA430800ABF378 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				942CCCF41EAA430800ABF378 /* PBXTargetDependency */,
+			);
+			name = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaTests";
+			productName = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaTests";
+			productReference = 942CCCF21EAA430800ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		942CCCFC1EAA430900ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 942CCD0C1EAA430900ABF378 /* Build configuration list for PBXNativeTarget "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaUITests" */;
+			buildPhases = (
+				942CCCF91EAA430900ABF378 /* Sources */,
+				942CCCFA1EAA430900ABF378 /* Frameworks */,
+				942CCCFB1EAA430900ABF378 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				942CCCFF1EAA430900ABF378 /* PBXTargetDependency */,
+			);
+			name = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaUITests";
+			productName = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaUITests";
+			productReference = 942CCCFD1EAA430900ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		942CCCD41EAA430800ABF378 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Juan Carlos Carbajal Ipenza";
+				TargetAttributes = {
+					942CCCDB1EAA430800ABF378 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 85667CV2UC;
+						ProvisioningStyle = Automatic;
+					};
+					942CCCF11EAA430800ABF378 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 85667CV2UC;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 942CCCDB1EAA430800ABF378;
+					};
+					942CCCFC1EAA430900ABF378 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 85667CV2UC;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 942CCCDB1EAA430800ABF378;
+					};
+				};
+			};
+			buildConfigurationList = 942CCCD71EAA430800ABF378 /* Build configuration list for PBXProject "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 942CCCD31EAA430800ABF378;
+			productRefGroup = 942CCCDD1EAA430800ABF378 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				942CCCDB1EAA430800ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica */,
+				942CCCF11EAA430800ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaTests */,
+				942CCCFC1EAA430900ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		942CCCDA1EAA430800ABF378 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				942CCCEC1EAA430800ABF378 /* LaunchScreen.storyboard in Resources */,
+				942CCCE91EAA430800ABF378 /* Assets.xcassets in Resources */,
+				942CCCE71EAA430800ABF378 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		942CCCF01EAA430800ABF378 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		942CCCFB1EAA430900ABF378 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		942CCCD81EAA430800ABF378 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				942CCCE41EAA430800ABF378 /* DetailViewController.swift in Sources */,
+				942CCCE21EAA430800ABF378 /* MasterViewController.swift in Sources */,
+				942CCCE01EAA430800ABF378 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		942CCCEE1EAA430800ABF378 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				942CCCF71EAA430800ABF378 /* Interactuando_con_el_hardware_del_dispositivo_iOS_Semana_2_Reproductor_de_M_sicaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		942CCCF91EAA430900ABF378 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				942CCD021EAA430900ABF378 /* Interactuando_con_el_hardware_del_dispositivo_iOS_Semana_2_Reproductor_de_M_sicaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		942CCCF41EAA430800ABF378 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 942CCCDB1EAA430800ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica */;
+			targetProxy = 942CCCF31EAA430800ABF378 /* PBXContainerItemProxy */;
+		};
+		942CCCFF1EAA430900ABF378 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 942CCCDB1EAA430800ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica */;
+			targetProxy = 942CCCFE1EAA430900ABF378 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		942CCCE51EAA430800ABF378 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				942CCCE61EAA430800ABF378 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		942CCCEA1EAA430800ABF378 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				942CCCEB1EAA430800ABF378 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		942CCD041EAA430900ABF378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		942CCD051EAA430900ABF378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		942CCD071EAA430900ABF378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 85667CV2UC;
+				INFOPLIST_FILE = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.m0rb1u5.Interactuando-con-el-hardware-del-dispositivo-iOS-Semana-2-Reproductor-de-M-sica";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		942CCD081EAA430900ABF378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 85667CV2UC;
+				INFOPLIST_FILE = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.m0rb1u5.Interactuando-con-el-hardware-del-dispositivo-iOS-Semana-2-Reproductor-de-M-sica";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		942CCD0A1EAA430900ABF378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 85667CV2UC;
+				INFOPLIST_FILE = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.m0rb1u5.Interactuando-con-el-hardware-del-dispositivo-iOS-Semana-2-Reproductor-de-M-sicaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica.app/Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica";
+			};
+			name = Debug;
+		};
+		942CCD0B1EAA430900ABF378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 85667CV2UC;
+				INFOPLIST_FILE = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.m0rb1u5.Interactuando-con-el-hardware-del-dispositivo-iOS-Semana-2-Reproductor-de-M-sicaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica.app/Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica";
+			};
+			name = Release;
+		};
+		942CCD0D1EAA430900ABF378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 85667CV2UC;
+				INFOPLIST_FILE = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.m0rb1u5.Interactuando-con-el-hardware-del-dispositivo-iOS-Semana-2-Reproductor-de-M-sicaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica";
+			};
+			name = Debug;
+		};
+		942CCD0E1EAA430900ABF378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 85667CV2UC;
+				INFOPLIST_FILE = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.m0rb1u5.Interactuando-con-el-hardware-del-dispositivo-iOS-Semana-2-Reproductor-de-M-sicaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		942CCCD71EAA430800ABF378 /* Build configuration list for PBXProject "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				942CCD041EAA430900ABF378 /* Debug */,
+				942CCD051EAA430900ABF378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		942CCD061EAA430900ABF378 /* Build configuration list for PBXNativeTarget "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				942CCD071EAA430900ABF378 /* Debug */,
+				942CCD081EAA430900ABF378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		942CCD091EAA430900ABF378 /* Build configuration list for PBXNativeTarget "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				942CCD0A1EAA430900ABF378 /* Debug */,
+				942CCD0B1EAA430900ABF378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		942CCD0C1EAA430900ABF378 /* Build configuration list for PBXNativeTarget "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				942CCD0D1EAA430900ABF378 /* Debug */,
+				942CCD0E1EAA430900ABF378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 942CCCD41EAA430800ABF378 /* Project object */;
+}

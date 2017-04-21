@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>942CCCDB1EAA430800ABF378</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>942CCCF11EAA430800ABF378</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>942CCCFC1EAA430900ABF378</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
