@@ -15,6 +15,16 @@
 		942CCCEC1EAA430800ABF378 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942CCCEA1EAA430800ABF378 /* LaunchScreen.storyboard */; };
 		942CCCF71EAA430800ABF378 /* Interactuando_con_el_hardware_del_dispositivo_iOS_Semana_2_Reproductor_de_M_sicaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942CCCF61EAA430800ABF378 /* Interactuando_con_el_hardware_del_dispositivo_iOS_Semana_2_Reproductor_de_M_sicaTests.swift */; };
 		942CCD021EAA430900ABF378 /* Interactuando_con_el_hardware_del_dispositivo_iOS_Semana_2_Reproductor_de_M_sicaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942CCD011EAA430900ABF378 /* Interactuando_con_el_hardware_del_dispositivo_iOS_Semana_2_Reproductor_de_M_sicaUITests.swift */; };
+		942CCD1A1EAA53F900ABF378 /* 6 Voltios - Lejos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 942CCD101EAA53F900ABF378 /* 6 Voltios - Lejos.jpg */; };
+		942CCD1B1EAA53F900ABF378 /* Leuzemia - Al colegio no voy mas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 942CCD111EAA53F900ABF378 /* Leuzemia - Al colegio no voy mas.jpg */; };
+		942CCD1C1EAA53F900ABF378 /* Los Chabelos - Shakira y sus amigas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 942CCD121EAA53F900ABF378 /* Los Chabelos - Shakira y sus amigas.jpg */; };
+		942CCD1D1EAA53F900ABF378 /* No recomendable - Matalos a todos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 942CCD131EAA53F900ABF378 /* No recomendable - Matalos a todos.jpg */; };
+		942CCD1E1EAA53F900ABF378 /* Warcry - Nana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 942CCD141EAA53F900ABF378 /* Warcry - Nana.jpg */; };
+		942CCD1F1EAA53F900ABF378 /* Los Chabelos - Shakira y sus amigas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 942CCD151EAA53F900ABF378 /* Los Chabelos - Shakira y sus amigas.mp3 */; };
+		942CCD201EAA53F900ABF378 /* No recomendable - Matalos a todos.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 942CCD161EAA53F900ABF378 /* No recomendable - Matalos a todos.mp3 */; };
+		942CCD211EAA53F900ABF378 /* Warcry - Nana.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 942CCD171EAA53F900ABF378 /* Warcry - Nana.mp3 */; };
+		942CCD221EAA53F900ABF378 /* 6 Voltios - Lejos.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 942CCD181EAA53F900ABF378 /* 6 Voltios - Lejos.mp3 */; };
+		942CCD231EAA53F900ABF378 /* Leuzemia - Al colegio no voy mas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 942CCD191EAA53F900ABF378 /* Leuzemia - Al colegio no voy mas.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,16 @@
 		942CCCFD1EAA430900ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		942CCD011EAA430900ABF378 /* Interactuando_con_el_hardware_del_dispositivo_iOS_Semana_2_Reproductor_de_M_sicaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactuando_con_el_hardware_del_dispositivo_iOS_Semana_2_Reproductor_de_M_sicaUITests.swift; sourceTree = "<group>"; };
 		942CCD031EAA430900ABF378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		942CCD101EAA53F900ABF378 /* 6 Voltios - Lejos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "6 Voltios - Lejos.jpg"; sourceTree = "<group>"; };
+		942CCD111EAA53F900ABF378 /* Leuzemia - Al colegio no voy mas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Leuzemia - Al colegio no voy mas.jpg"; sourceTree = "<group>"; };
+		942CCD121EAA53F900ABF378 /* Los Chabelos - Shakira y sus amigas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Los Chabelos - Shakira y sus amigas.jpg"; sourceTree = "<group>"; };
+		942CCD131EAA53F900ABF378 /* No recomendable - Matalos a todos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "No recomendable - Matalos a todos.jpg"; sourceTree = "<group>"; };
+		942CCD141EAA53F900ABF378 /* Warcry - Nana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Warcry - Nana.jpg"; sourceTree = "<group>"; };
+		942CCD151EAA53F900ABF378 /* Los Chabelos - Shakira y sus amigas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Los Chabelos - Shakira y sus amigas.mp3"; sourceTree = "<group>"; };
+		942CCD161EAA53F900ABF378 /* No recomendable - Matalos a todos.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "No recomendable - Matalos a todos.mp3"; sourceTree = "<group>"; };
+		942CCD171EAA53F900ABF378 /* Warcry - Nana.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Warcry - Nana.mp3"; sourceTree = "<group>"; };
+		942CCD181EAA53F900ABF378 /* 6 Voltios - Lejos.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "6 Voltios - Lejos.mp3"; sourceTree = "<group>"; };
+		942CCD191EAA53F900ABF378 /* Leuzemia - Al colegio no voy mas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Leuzemia - Al colegio no voy mas.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +119,7 @@
 		942CCCDE1EAA430800ABF378 /* Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sica */ = {
 			isa = PBXGroup;
 			children = (
+				942CCD0F1EAA4E5300ABF378 /* Canciones */,
 				942CCCDF1EAA430800ABF378 /* AppDelegate.swift */,
 				942CCCE11EAA430800ABF378 /* MasterViewController.swift */,
 				942CCCE31EAA430800ABF378 /* DetailViewController.swift */,
@@ -126,6 +147,23 @@
 				942CCD031EAA430900ABF378 /* Info.plist */,
 			);
 			path = "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaUITests";
+			sourceTree = "<group>";
+		};
+		942CCD0F1EAA4E5300ABF378 /* Canciones */ = {
+			isa = PBXGroup;
+			children = (
+				942CCD101EAA53F900ABF378 /* 6 Voltios - Lejos.jpg */,
+				942CCD111EAA53F900ABF378 /* Leuzemia - Al colegio no voy mas.jpg */,
+				942CCD121EAA53F900ABF378 /* Los Chabelos - Shakira y sus amigas.jpg */,
+				942CCD131EAA53F900ABF378 /* No recomendable - Matalos a todos.jpg */,
+				942CCD141EAA53F900ABF378 /* Warcry - Nana.jpg */,
+				942CCD151EAA53F900ABF378 /* Los Chabelos - Shakira y sus amigas.mp3 */,
+				942CCD161EAA53F900ABF378 /* No recomendable - Matalos a todos.mp3 */,
+				942CCD171EAA53F900ABF378 /* Warcry - Nana.mp3 */,
+				942CCD181EAA53F900ABF378 /* 6 Voltios - Lejos.mp3 */,
+				942CCD191EAA53F900ABF378 /* Leuzemia - Al colegio no voy mas.mp3 */,
+			);
+			name = Canciones;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +276,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				942CCD1A1EAA53F900ABF378 /* 6 Voltios - Lejos.jpg in Resources */,
+				942CCD1C1EAA53F900ABF378 /* Los Chabelos - Shakira y sus amigas.jpg in Resources */,
 				942CCCEC1EAA430800ABF378 /* LaunchScreen.storyboard in Resources */,
+				942CCD1E1EAA53F900ABF378 /* Warcry - Nana.jpg in Resources */,
+				942CCD211EAA53F900ABF378 /* Warcry - Nana.mp3 in Resources */,
+				942CCD231EAA53F900ABF378 /* Leuzemia - Al colegio no voy mas.mp3 in Resources */,
 				942CCCE91EAA430800ABF378 /* Assets.xcassets in Resources */,
+				942CCD1B1EAA53F900ABF378 /* Leuzemia - Al colegio no voy mas.jpg in Resources */,
+				942CCD1D1EAA53F900ABF378 /* No recomendable - Matalos a todos.jpg in Resources */,
+				942CCD1F1EAA53F900ABF378 /* Los Chabelos - Shakira y sus amigas.mp3 in Resources */,
 				942CCCE71EAA430800ABF378 /* Main.storyboard in Resources */,
+				942CCD201EAA53F900ABF378 /* No recomendable - Matalos a todos.mp3 in Resources */,
+				942CCD221EAA53F900ABF378 /* 6 Voltios - Lejos.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
