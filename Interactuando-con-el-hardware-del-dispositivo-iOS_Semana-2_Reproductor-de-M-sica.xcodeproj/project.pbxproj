@@ -25,6 +25,7 @@
 		942CCD211EAA53F900ABF378 /* Warcry - Nana.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 942CCD171EAA53F900ABF378 /* Warcry - Nana.mp3 */; };
 		942CCD221EAA53F900ABF378 /* 6 Voltios - Lejos.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 942CCD181EAA53F900ABF378 /* 6 Voltios - Lejos.mp3 */; };
 		942CCD231EAA53F900ABF378 /* Leuzemia - Al colegio no voy mas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 942CCD191EAA53F900ABF378 /* Leuzemia - Al colegio no voy mas.mp3 */; };
+		947682481EB886520054FFD9 /* Cancion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947682471EB886520054FFD9 /* Cancion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		942CCD171EAA53F900ABF378 /* Warcry - Nana.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Warcry - Nana.mp3"; sourceTree = "<group>"; };
 		942CCD181EAA53F900ABF378 /* 6 Voltios - Lejos.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "6 Voltios - Lejos.mp3"; sourceTree = "<group>"; };
 		942CCD191EAA53F900ABF378 /* Leuzemia - Al colegio no voy mas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Leuzemia - Al colegio no voy mas.mp3"; sourceTree = "<group>"; };
+		947682471EB886520054FFD9 /* Cancion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cancion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			children = (
 				942CCD0F1EAA4E5300ABF378 /* Canciones */,
 				942CCCDF1EAA430800ABF378 /* AppDelegate.swift */,
+				947682471EB886520054FFD9 /* Cancion.swift */,
 				942CCCE11EAA430800ABF378 /* MasterViewController.swift */,
 				942CCCE31EAA430800ABF378 /* DetailViewController.swift */,
 				942CCCE51EAA430800ABF378 /* Main.storyboard */,
@@ -316,6 +319,7 @@
 				942CCCE41EAA430800ABF378 /* DetailViewController.swift in Sources */,
 				942CCCE21EAA430800ABF378 /* MasterViewController.swift in Sources */,
 				942CCCE01EAA430800ABF378 /* AppDelegate.swift in Sources */,
+				947682481EB886520054FFD9 /* Cancion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +572,7 @@
 				942CCD081EAA430900ABF378 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		942CCD091EAA430900ABF378 /* Build configuration list for PBXNativeTarget "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaTests" */ = {
 			isa = XCConfigurationList;
@@ -576,6 +581,7 @@
 				942CCD0B1EAA430900ABF378 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		942CCD0C1EAA430900ABF378 /* Build configuration list for PBXNativeTarget "Interactuando-con-el-hardware-del-dispositivo-iOS_Semana-2_Reproductor-de-M-sicaUITests" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +590,7 @@
 				942CCD0E1EAA430900ABF378 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

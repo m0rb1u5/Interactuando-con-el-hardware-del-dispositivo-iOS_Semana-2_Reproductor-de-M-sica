@@ -7,11 +7,11 @@
 //
 
 import UIKit
+import AVFoundation
 
 class MasterViewController: UITableViewController {
     var detailViewController: DetailViewController? = nil
-    var objects = [Any]()
-
+    var canciones = [Cancion]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,12 @@ class MasterViewController: UITableViewController {
             let controllers = split.viewControllers
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
+        
+        self.canciones.append(Cancion(nombre: "Lejos", artista: "6 Voltios", recursoURL: "6 Voltios - Lejos", extensionURL: "mp3", recursoPortada: "6 Voltios - Lejos", extensionPortada: "jpg"))
+        self.canciones.append(Cancion(nombre: "Al colegio no voy más", artista: "Leuzemia", recursoURL: "Leuzemia - Al colegio no voy mas", extensionURL: "mp3", recursoPortada: "Leuzemia - Al colegio no voy mas", extensionPortada: "jpg"))
+        self.canciones.append(Cancion(nombre: "Shakira y sus amigas", artista: "Los Chabelos", recursoURL: "Los Chabelos - Shakira y sus amigas", extensionURL: "mp3", recursoPortada: "Los Chabelos - Shakira y sus amigas", extensionPortada: "jpg"))
+        self.canciones.append(Cancion(nombre: "Matalos a todos", artista: "No recomendable", recursoURL: "No recomendable - Matalos a todos", extensionURL: "mp3", recursoPortada: "No recomendable - Matalos a todos", extensionPortada: "jpg"))
+        self.canciones.append(Cancion(nombre: "Nana", artista: "Warcry", recursoURL: "Warcry - Nana", extensionURL: "mp3", recursoPortada: "Warcry - Nana", extensionPortada: "jpg"))
     }
     override func viewWillAppear(_ animated: Bool) {
         clearsSelectionOnViewWillAppear = splitViewController!.isCollapsed
@@ -30,20 +36,14 @@ class MasterViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func insertNewObject(_ sender: Any) {
-        objects.insert(NSDate(), at: 0)
-        let indexPath = IndexPath(row: 0, section: 0)
-        tableView.insertRows(at: [indexPath], with: .automatic)
-    }
-
     // MARK: - Segues
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
-                let object = objects[indexPath.row] as! NSDate
+                let cancion = canciones[indexPath.row]
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                controller.detailItem = object
+                controller.detailItem = cancion
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
@@ -56,26 +56,18 @@ class MasterViewController: UITableViewController {
         return 1
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return objects.count
+        return self.canciones.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-        let object = objects[indexPath.row] as! NSDate
-        cell.textLabel!.text = object.description
-        return cell
-    }
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            objects.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+        cell.textLabel?.text = self.canciones[indexPath.row].nombre
+        cell.detailTextLabel?.text = self.canciones[indexPath.row].artista
+        if (self.canciones[indexPath.row].portada != nil) {
+            cell.accessoryView = UIImageView(image: self.canciones[indexPath.row].portada)
+            cell.accessoryView?.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
         }
+        return cell
     }
 }
 
