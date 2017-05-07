@@ -6,7 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -45,24 +45,40 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="artista" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjV-25-iBw">
-                                <rect key="frame" x="166" y="354" width="44" height="21"/>
+                                <rect key="frame" x="166" y="354" width="44" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vDh-Ih-I6J">
-                                <rect key="frame" x="68" y="72" width="240" height="242"/>
+                                <rect key="frame" x="67" y="72" width="242" height="242"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vDh-Ih-I6J" secondAttribute="height" multiplier="1:1" id="UbE-tb-lf2"/>
+                                </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XiF-Kc-E26">
+                                <rect key="frame" x="172" y="402" width="32" height="32"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="play"/>
+                                <state key="selected" image="play"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1iX-8N-ESg">
+                                <rect key="frame" x="214" y="402" width="32" height="32"/>
+                                <state key="normal" image="next"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="1iX-8N-ESg" firstAttribute="leading" secondItem="XiF-Kc-E26" secondAttribute="trailing" constant="10" id="CC0-xa-5Xq"/>
+                            <constraint firstItem="XiF-Kc-E26" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="Fgh-lE-Nnc"/>
                             <constraint firstItem="J4J-3m-og6" firstAttribute="top" secondItem="vDh-Ih-I6J" secondAttribute="bottom" constant="8" symbolic="YES" id="KuP-7Z-5zT"/>
                             <constraint firstItem="vDh-Ih-I6J" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="LD9-EA-U5i"/>
                             <constraint firstItem="pjV-25-iBw" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="NS2-4f-LoD"/>
                             <constraint firstItem="pjV-25-iBw" firstAttribute="top" secondItem="J4J-3m-og6" secondAttribute="bottom" constant="8" symbolic="YES" id="T2N-bI-ve8"/>
-                            <constraint firstItem="vDh-Ih-I6J" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" constant="52" id="ab2-CJ-Pva"/>
-                            <constraint firstItem="GAO-Cl-Wes" firstAttribute="top" secondItem="pjV-25-iBw" secondAttribute="bottom" constant="292" id="dcz-Fr-Tts"/>
+                            <constraint firstItem="1iX-8N-ESg" firstAttribute="centerY" secondItem="XiF-Kc-E26" secondAttribute="centerY" id="YOF-62-jye"/>
                             <constraint firstItem="J4J-3m-og6" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="jvR-Pq-olr"/>
+                            <constraint firstItem="XiF-Kc-E26" firstAttribute="top" secondItem="pjV-25-iBw" secondAttribute="bottom" constant="30" id="krv-zl-cGo"/>
                             <constraint firstItem="vDh-Ih-I6J" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="8" symbolic="YES" id="oWA-dr-T3K"/>
                             <constraint firstItem="J4J-3m-og6" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" id="s50-oK-EqM"/>
                         </constraints>
@@ -101,18 +117,18 @@
                                 <rect key="frame" x="0.0" y="22" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
-                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Arm-wq-HPj">
-                                            <rect key="frame" x="15" y="4" width="37" height="21"/>
+                                            <rect key="frame" x="15" y="5" width="36.5" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gOo-iw-jlM">
-                                            <rect key="frame" x="15" y="25" width="33" height="15"/>
+                                            <rect key="frame" x="15" y="25.5" width="33" height="14.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -155,6 +171,10 @@
             <point key="canvasLocation" x="-45" y="129"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="next" width="32" height="32"/>
+        <image name="play" width="32" height="32"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6S0-TO-JiA"/>
     </inferredMetricsTieBreakers>
