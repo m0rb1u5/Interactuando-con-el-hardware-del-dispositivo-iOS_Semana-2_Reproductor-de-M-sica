@@ -9,6 +9,10 @@
 import UIKit
 import AVFoundation
 
+protocol MyDelegado {
+    func selectRow(indexPath: Int)
+}
+
 class DetailViewController: UIViewController, AVAudioPlayerDelegate {
     var reproductor: AVAudioPlayer!
     @IBOutlet weak var imagen: UIImageView!
@@ -19,15 +23,13 @@ class DetailViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var sound: UIButton!
     @IBOutlet weak var playpause: UIButton!
-    @IBOutlet weak var progressView: UIProgressView!
     @IBOutlet weak var shuffle: UIButton!
     @IBOutlet weak var repeatButton: UIButton!
-    
-    
+    @IBOutlet weak var progress: UISlider!
     var volumen: Float!
     var canciones = [Cancion]()
     var timer: Timer?
-    
+    var delegado: MyDelegado?
     var detailItem: Int? {
         didSet {
             // Update the view.
@@ -35,7 +37,7 @@ class DetailViewController: UIViewController, AVAudioPlayerDelegate {
         }
     }
 
-    override func 	viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         configureView()
@@ -43,6 +45,9 @@ class DetailViewController: UIViewController, AVAudioPlayerDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        self.stopAction()
     }
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
@@ -53,13 +58,16 @@ class DetailViewController: UIViewController, AVAudioPlayerDelegate {
                     random = Int(arc4random_uniform(UInt32(self.canciones.count)))
                 }
                 self.detailItem = random % self.canciones.count
+                delegado?.selectRow(indexPath: detailItem!)
             }
             else {
                 if self.repeatButton.isSelected == true {
                     self.detailItem = (self.detailItem! + 1) % self.canciones.count
+                    delegado?.selectRow(indexPath: detailItem!)
                 }
                 else {
                     self.detailItem = (self.detailItem! + 1) % self.canciones.count
+                    delegado?.selectRow(indexPath: detailItem!)
                     if self.reproductor.isPlaying && self.detailItem! == 0 {
                         self.reproductor.stop()
                         self.reproductor.currentTime = 0.0
@@ -68,7 +76,7 @@ class DetailViewController: UIViewController, AVAudioPlayerDelegate {
                             self.timer = nil
                         }
                         self.ahora.text = "00:00"
-                        self.progressView.progress = 0.0
+                        self.progress.value = 0.0
                         self.playpause.isSelected = false
                     }
                 }
@@ -125,23 +133,35 @@ class DetailViewController: UIViewController, AVAudioPlayerDelegate {
         return NSString(format: "%0.2d:%0.2d", minutes, seconds) as String
     }
     @objc func updateProgressView() {
+        guard reproductor != nil else {return}
         if self.ahora != nil {
             self.ahora.text = self.stringFromTimeInterval(interval: self.reproductor.currentTime)
         }
-        if self.progressView != nil {
-            self.progressView.progress = Float(self.reproductor.currentTime / self.reproductor.duration)
+        if self.progress != nil {
+            self.progress.value = Float(self.reproductor.currentTime / self.reproductor.duration)
         }
     }
-    
-    
     
     @IBAction func shuffleAction(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
     }
     @IBAction func backAction(_ sender: UIButton) {
-        self.detailItem = (self.canciones.count + self.detailItem! - 1) % self.canciones.count
+        guard reproductor != nil else {return}
+        if self.shuffle.isSelected == true {
+            var random: Int = Int(arc4random_uniform(UInt32(self.canciones.count)))
+            while random == self.detailItem {
+                random = Int(arc4random_uniform(UInt32(self.canciones.count)))
+            }
+            self.detailItem = random % self.canciones.count
+            delegado?.selectRow(indexPath: detailItem!)
+        }
+        else {
+            self.detailItem = (self.canciones.count + self.detailItem! - 1) % self.canciones.count
+            delegado?.selectRow(indexPath: detailItem!)
+        }
     }
     @IBAction func playPauseAction(_ sender: UIButton) {
+        guard reproductor != nil else {return}
         sender.isSelected = !sender.isSelected
         if sender.isSelected {
             if !self.reproductor.isPlaying {
@@ -161,27 +181,39 @@ class DetailViewController: UIViewController, AVAudioPlayerDelegate {
             }
         }
     }
-    @IBAction func stopAction(_ sender: UIButton) {
-        if self.reproductor.isPlaying {
-            self.reproductor.stop()
-            self.reproductor.currentTime = 0.0
-            if self.timer != nil {
-                self.timer?.invalidate()
-                self.timer = nil
-            }
-            self.ahora.text = "00:00"
-            self.progressView.progress = 0.0
-            self.playpause.isSelected = false
+    @IBAction func stopAction() {
+        guard reproductor != nil else {return}
+        self.reproductor.stop()
+        self.reproductor.currentTime = 0.0
+        if self.timer != nil {
+            self.timer?.invalidate()
+            self.timer = nil
         }
+        self.ahora.text = "00:00"
+        self.progress.value = 0.0
+        self.playpause.isSelected = false
     }
     @IBAction func nextAction(_ sender: UIButton) {
-        self.detailItem = (self.detailItem! + 1) % self.canciones.count
+        guard reproductor != nil else {return}
+        if self.shuffle.isSelected == true {
+            var random: Int = Int(arc4random_uniform(UInt32(self.canciones.count)))
+            while random == self.detailItem {
+                random = Int(arc4random_uniform(UInt32(self.canciones.count)))
+            }
+            self.detailItem = random % self.canciones.count
+            delegado?.selectRow(indexPath: detailItem!)
+        }
+        else {
+            self.detailItem = (self.detailItem! + 1) % self.canciones.count
+            delegado?.selectRow(indexPath: detailItem!)
+        }
     }
     @IBAction func repeatAction(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
     }
     @IBAction func soundAction(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
+        guard reproductor != nil else {return}
         if sender.isSelected {
             self.slider.value = 0.0
             self.reproductor.volume = self.slider.value
@@ -192,6 +224,7 @@ class DetailViewController: UIViewController, AVAudioPlayerDelegate {
         }
     }
     @IBAction func cambioVolumen(_ sender: UISlider) {
+        guard reproductor != nil else {return}
         self.reproductor.volume = self.slider.value
         self.volumen = self.reproductor.volume
         if self.volumen == 0.0 {
@@ -201,8 +234,12 @@ class DetailViewController: UIViewController, AVAudioPlayerDelegate {
             self.sound.isSelected = false
         }
     }
-    
-      
-    
+    @IBAction func cambioProgress(_ sender: UISlider) {
+        guard reproductor != nil else {return}
+        self.reproductor.currentTime = TimeInterval(self.progress.value) * self.reproductor.duration
+        if self.ahora != nil {
+            self.ahora.text = self.stringFromTimeInterval(interval: self.reproductor.currentTime)
+        }
+    }
 }
 

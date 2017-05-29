@@ -26,6 +26,7 @@
 		942CCD221EAA53F900ABF378 /* 6 Voltios - Lejos.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 942CCD181EAA53F900ABF378 /* 6 Voltios - Lejos.mp3 */; };
 		942CCD231EAA53F900ABF378 /* Leuzemia - Al colegio no voy mas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 942CCD191EAA53F900ABF378 /* Leuzemia - Al colegio no voy mas.mp3 */; };
 		947682481EB886520054FFD9 /* Cancion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947682471EB886520054FFD9 /* Cancion.swift */; };
+		948A3D331EDBF13C00DFF7C7 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = 948A3D321EDBF13C00DFF7C7 /* music.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		942CCD181EAA53F900ABF378 /* 6 Voltios - Lejos.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "6 Voltios - Lejos.mp3"; sourceTree = "<group>"; };
 		942CCD191EAA53F900ABF378 /* Leuzemia - Al colegio no voy mas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Leuzemia - Al colegio no voy mas.mp3"; sourceTree = "<group>"; };
 		947682471EB886520054FFD9 /* Cancion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cancion.swift; sourceTree = "<group>"; };
+		948A3D321EDBF13C00DFF7C7 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		942CCD0F1EAA4E5300ABF378 /* Canciones */ = {
 			isa = PBXGroup;
 			children = (
+				948A3D321EDBF13C00DFF7C7 /* music.png */,
 				942CCD101EAA53F900ABF378 /* 6 Voltios - Lejos.jpg */,
 				942CCD111EAA53F900ABF378 /* Leuzemia - Al colegio no voy mas.jpg */,
 				942CCD121EAA53F900ABF378 /* Los Chabelos - Shakira y sus amigas.jpg */,
@@ -290,6 +293,7 @@
 				942CCD1D1EAA53F900ABF378 /* No recomendable - Matalos a todos.jpg in Resources */,
 				942CCD1F1EAA53F900ABF378 /* Los Chabelos - Shakira y sus amigas.mp3 in Resources */,
 				942CCCE71EAA430800ABF378 /* Main.storyboard in Resources */,
+				948A3D331EDBF13C00DFF7C7 /* music.png in Resources */,
 				942CCD201EAA53F900ABF378 /* No recomendable - Matalos a todos.mp3 in Resources */,
 				942CCD221EAA53F900ABF378 /* 6 Voltios - Lejos.mp3 in Resources */,
 			);

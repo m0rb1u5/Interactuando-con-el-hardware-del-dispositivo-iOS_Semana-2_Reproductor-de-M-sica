@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class MasterViewController: UITableViewController {
+class MasterViewController: UITableViewController, MyDelegado {
     var detailViewController: DetailViewController? = nil
     var canciones = [Cancion]()
 
@@ -42,6 +42,7 @@ class MasterViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
+                controller.delegado = self
                 controller.canciones = canciones
                 controller.detailItem = indexPath.row
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
@@ -68,6 +69,12 @@ class MasterViewController: UITableViewController {
             cell.accessoryView?.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
         }
         return cell
+    }
+    
+    func selectRow(indexPath: Int) {
+        print("JAJAJAJAJAJ")
+        let indexPathObj = IndexPath(row: indexPath, section: 0)
+        self.tableView.selectRow(at: indexPathObj, animated: true, scrollPosition: UITableViewScrollPosition.none)
     }
 }
 
